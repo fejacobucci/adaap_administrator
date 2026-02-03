@@ -1,0 +1,230 @@
+/* Users Page - Scoped CSS */
+.users-container {
+  max-width: 1400px;
+}
+
+/* Filters Card */
+.filters-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.filters-card .form-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.filters-card .form-control,
+.filters-card .form-select {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  padding: 10px 15px;
+  font-size: 14px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.filters-card .form-control:focus,
+.filters-card .form-select:focus {
+  border-color: #91BFFF;
+  box-shadow: 0 0 0 0.2rem rgba(145, 191, 255, 0.25);
+}
+
+.search-btn {
+  background: linear-gradient(135deg, #91BFFF 0%, #7AABF0 100%);
+  border: none;
+  padding: 10px 18px;
+}
+
+.search-btn:hover {
+  background: linear-gradient(135deg, #7AABF0 0%, #6399E0 100%);
+}
+
+.clear-btn {
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+
+/* Users Table Card */
+.users-table-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.users-table {
+  margin-bottom: 0;
+}
+
+.users-table thead th {
+  background: #f8f9fa;
+  border-bottom: 2px solid #e9ecef;
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  padding: 14px 12px;
+  white-space: nowrap;
+}
+
+.users-table tbody td {
+  padding: 14px 12px;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #343a40;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.users-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.user-name {
+  font-weight: 500;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
+
+.action-buttons .btn {
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.action-buttons .btn-outline-info {
+  color: #17a2b8;
+  border-color: #17a2b8;
+}
+
+.action-buttons .btn-outline-info:hover {
+  background: #17a2b8;
+  color: white;
+}
+
+.action-buttons .btn-outline-warning {
+  color: #856404;
+  border-color: #ffc107;
+}
+
+.action-buttons .btn-outline-warning:hover {
+  background: #ffc107;
+  color: #212529;
+}
+
+.action-buttons .btn-outline-success {
+  color: #28a745;
+  border-color: #28a745;
+}
+
+.action-buttons .btn-outline-success:hover {
+  background: #28a745;
+  color: white;
+}
+
+.action-buttons .btn-outline-primary {
+  color: #91BFFF;
+  border-color: #91BFFF;
+}
+
+.action-buttons .btn-outline-primary:hover {
+  background: #91BFFF;
+  color: white;
+}
+
+.action-buttons .btn-outline-danger {
+  color: #dc3545;
+  border-color: #dc3545;
+}
+
+.action-buttons .btn-outline-danger:hover {
+  background: #dc3545;
+  color: white;
+}
+
+/* Pagination */
+.pagination .page-link {
+  color: #343a40;
+  border-color: #e9ecef;
+  padding: 8px 14px;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #91BFFF;
+  border-color: #91BFFF;
+}
+
+.pagination .page-link:hover {
+  background-color: #e9ecef;
+}
+
+/* Modals */
+.details-modal-header {
+  background: linear-gradient(90deg, #91BFFF 0%, #E0E0E0 100%);
+  color: white;
+  border-radius: 0;
+}
+
+.details-modal-header .btn-close {
+  filter: brightness(0) invert(1);
+}
+
+.delete-modal-header {
+  background: linear-gradient(90deg, #dc3545 0%, #e05c5c 100%);
+  color: white;
+}
+
+.delete-modal-header .btn-close {
+  filter: brightness(0) invert(1);
+}
+
+.reset-modal-header {
+  background: linear-gradient(90deg, #91BFFF 0%, #9F9FF8 100%);
+  color: white;
+}
+
+.reset-modal-header .btn-close {
+  filter: brightness(0) invert(1);
+}
+
+.user-details label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6c757d;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.user-details p {
+  font-size: 15px;
+  color: #343a40;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .action-buttons {
+    flex-wrap: wrap;
+  }
+
+  .users-table thead th,
+  .users-table tbody td {
+    font-size: 13px;
+    padding: 10px 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .users-table-card {
+    overflow-x: auto;
+  }
+
+  .users-table {
+    min-width: 800px;
+  }
+}

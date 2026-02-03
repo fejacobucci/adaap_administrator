@@ -1,0 +1,61 @@
+:root {
+  /* ADAAP Brand Colors */
+  --adaap-primary: #91BFFF;
+  --adaap-secondary: #E0E0E0;
+  --adaap-selected-bg: #92BFFF;
+  --adaap-selected-text: white;
+  --adaap-btn-confirm: #94B9B8;
+  --adaap-btn-cancel: #F178B6;
+  --adaap-btn-edit: #F9F995;
+
+  /* Chart Colors */
+  --adaap-chart-color-1: #9F9FF8;
+  --adaap-chart-color-2: #92BFFF;
+  --adaap-chart-color-3: #94B9B8;
+  --adaap-chart-color-4: #F178B6;
+  --adaap-chart-color-5: #B0E0E6;
+
+  /* Status Colors */
+  --status-active: #28a745;
+  --status-inactive: #6c757d;
+  --status-suspended: #dc3545;
+  --status-pending: #ffc107;
+
+  /* Layout */
+  --sidebar-width: 250px;
+  --topbar-height: 56px;
+
+  /* Typography */
+  --font-primary: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f9fa;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}

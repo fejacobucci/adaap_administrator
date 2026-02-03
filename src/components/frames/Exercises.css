@@ -1,0 +1,276 @@
+/* Exercises Page - Scoped CSS */
+.exercises-container {
+  max-width: 1400px;
+}
+
+/* Action Header */
+.action-header {
+  display: flex;
+  gap: 10px;
+}
+
+.add-btn {
+  background: linear-gradient(135deg, #94B9B8 0%, #7DA8A7 100%);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.add-btn:hover {
+  background: linear-gradient(135deg, #7DA8A7 0%, #6C9796 100%);
+}
+
+.upload-btn {
+  background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.upload-btn:hover {
+  background: linear-gradient(135deg, #218838 0%, #1e7e34 100%);
+}
+
+/* Filters Card */
+.filters-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.filters-card .form-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.filters-card .form-control,
+.filters-card .form-select {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  padding: 10px 15px;
+  font-size: 14px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.filters-card .form-control:focus,
+.filters-card .form-select:focus {
+  border-color: #91BFFF;
+  box-shadow: 0 0 0 0.2rem rgba(145, 191, 255, 0.25);
+}
+
+.search-btn {
+  background: linear-gradient(135deg, #91BFFF 0%, #7AABF0 100%);
+  border: none;
+  padding: 10px 18px;
+}
+
+.search-btn:hover {
+  background: linear-gradient(135deg, #7AABF0 0%, #6399E0 100%);
+}
+
+.clear-btn {
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+
+/* Exercises Table Card */
+.exercises-table-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.exercises-table {
+  margin-bottom: 0;
+}
+
+.exercises-table thead th {
+  background: #f8f9fa;
+  border-bottom: 2px solid #e9ecef;
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  padding: 14px 12px;
+  white-space: nowrap;
+}
+
+.exercises-table tbody td {
+  padding: 14px 12px;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #343a40;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.exercises-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.exercise-name {
+  font-weight: 500;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
+
+.action-buttons .btn {
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.action-buttons .btn-outline-primary {
+  color: #91BFFF;
+  border-color: #91BFFF;
+}
+
+.action-buttons .btn-outline-primary:hover {
+  background: #91BFFF;
+  color: white;
+}
+
+.action-buttons .btn-outline-danger {
+  color: #dc3545;
+  border-color: #dc3545;
+}
+
+.action-buttons .btn-outline-danger:hover {
+  background: #dc3545;
+  color: white;
+}
+
+/* Pagination */
+.pagination .page-link {
+  color: #343a40;
+  border-color: #e9ecef;
+  padding: 8px 14px;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #91BFFF;
+  border-color: #91BFFF;
+}
+
+.pagination .page-link:hover {
+  background-color: #e9ecef;
+}
+
+/* Modals */
+.upload-modal-header {
+  background: linear-gradient(90deg, #28a745 0%, #5cb85c 100%);
+  color: white;
+}
+
+.upload-modal-header .btn-close {
+  filter: brightness(0) invert(1);
+}
+
+.edit-modal-header {
+  background: linear-gradient(90deg, #91BFFF 0%, #E0E0E0 100%);
+  color: white;
+}
+
+.edit-modal-header .btn-close {
+  filter: brightness(0) invert(1);
+}
+
+.delete-modal-header {
+  background: linear-gradient(90deg, #dc3545 0%, #e05c5c 100%);
+  color: white;
+}
+
+.delete-modal-header .btn-close {
+  filter: brightness(0) invert(1);
+}
+
+/* Upload Modal Content */
+.upload-section .form-control {
+  border-radius: 8px;
+}
+
+.assign-section .form-select {
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+
+.preview-section {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.preview-section h6 {
+  color: #343a40;
+  font-weight: 600;
+}
+
+.preview-section .table {
+  background: white;
+  margin-bottom: 0;
+}
+
+/* Edit Modal Content */
+.edit-modal-header + .modal-body .form-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.edit-modal-header + .modal-body .form-control,
+.edit-modal-header + .modal-body .form-select {
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.edit-modal-header + .modal-body .form-control:focus,
+.edit-modal-header + .modal-body .form-select:focus {
+  border-color: #91BFFF;
+  box-shadow: 0 0 0 0.2rem rgba(145, 191, 255, 0.25);
+}
+
+/* Alert Styling */
+.alert-info {
+  background-color: #e8f4fd;
+  border-color: #b8daff;
+}
+
+.alert-info .alert-heading {
+  color: #004085;
+  font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .action-header {
+    flex-direction: column;
+  }
+
+  .action-header .btn {
+    width: 100%;
+  }
+
+  .exercises-table thead th,
+  .exercises-table tbody td {
+    font-size: 13px;
+    padding: 10px 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .exercises-table-card {
+    overflow-x: auto;
+  }
+
+  .exercises-table {
+    min-width: 900px;
+  }
+}
